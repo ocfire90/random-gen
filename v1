@@ -1,0 +1,18 @@
+import random
+
+change = 0
+change2 = 0
+
+low = input("Please pick the lower number: ")
+high = input("Please pick the higher number: ")
+
+low = int(low)
+high = int(high)
+
+if low > high:
+    change = high
+    change2 = low
+    low = change
+    high = change2
+    
+print(random.randint(low, high))
